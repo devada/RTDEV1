@@ -1,0 +1,12 @@
+<template name="singlePost">
+  {{#if Template.subscriptionsReady}}
+    {{#with getPost}}
+      <h2>{{title}}</h2>
+      <p>
+        {{body}}
+      </p>
+    {{/with}}
+  {{else}}
+    Loading....
+  {{/if}}
+</template>

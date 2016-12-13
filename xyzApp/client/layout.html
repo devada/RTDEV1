@@ -1,0 +1,26 @@
+<template name="mainLayout">
+  {{>Template.dynamic template=content}}
+</template>
+
+<template name="loggedInLayout">
+  <header>
+
+  </header>
+  <main>
+    <form name="thoughtSubmit-form">
+      <label for="textarea">Thought:</label><br>
+      <textarea name="thought_textarea" rows="8" cols="40" placeholder="Type here..."></textarea><br>
+      <button type="submit" name="thoughtSubmit-button">Submit</button>
+    </form>
+    {{>Template.dynamic template=content}}
+  </main>
+</template>
+
+<template name="postLayout">
+  <header>
+
+  </header>
+  <main>
+    {{>Template.dynamic template=content}}
+  </main>
+</template>
